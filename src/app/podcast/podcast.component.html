@@ -1,1 +1,35 @@
-<p>podcast works!</p>
+<div class="container">
+  <div *ngFor="let card of cards" class="card" style="width: 50rem;">
+    <div class="card-body">
+      <div class="mb-4">
+        <button class="ringouter">
+          <span class="ring"><i class="fa-solid fa-play"></i>{{ card.duration }}</span>
+        </button>
+        <img class="image-mb4" [src]="card.imageUrl" class="card-img-top" alt="cardimage">
+      </div>
+      <div class="mt-4 mb-4">
+        <a class="badge bg-secondary">{{ card.category }}</a>
+      </div>
+      <div>
+        <i class="fa-solid fa-headset"></i>
+        <a type="button" class="btn btn-link">{{ card.type }}</a>
+         <h3 class="fa-text">{{ card.title }}</h3> 
+      </div>
+      <!-- <h2 class="card-title mt-4 mb-4">{{ card.title }}</h2> -->
+      <div class="mt-4 mb-4 align-items-center">
+        <img [src]="card.author1.image" class="rounded-circle" alt="circleimage">
+        <a type="button" class="btn btn-link article-author-name">{{ card.author1.name }}</a>
+        <span class="article-date">{{ card.author1.date }}</span>
+      </div>
+      <div class="mt-4 mb-4 align-items-center">
+        <img [src]="card.author2.image" class="rounded-circle" alt="circleimage">
+        <a type="button" class="btn btn-link podcast-author-name">{{ card.author2.name }}</a>
+        <span class="article-date"></span>
+      </div>
+      <p class="card-text">{{ card.content }}</p>
+      <div class="card-footer text-muted">
+        <button type="button" class="btn btn-link">Learn more</button>
+      </div>
+    </div>
+  </div>
+</div>

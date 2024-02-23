@@ -7,12 +7,21 @@ import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
-
+ 
+  
   constructor(private modalService: NgbModal) {
+
   }
+  
 
   public open(modal: any): void {
     this.modalService.open(modal);
   }
+  
+receivePodcastData(data: string) {
+  // Handle the received data here
+  console.log("Received data from PodcastComponent:", data);
+  
 
+  }
 }

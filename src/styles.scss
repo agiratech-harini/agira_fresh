@@ -1,1 +1,155 @@
 @import "~@fortawesome/fontawesome-free/css/all.css";
+
+.bg-secondary {
+    background-color: #2b3146 !important;
+    cursor: pointer;
+}
+.icon{
+    padding: 5px 15px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0.2em;
+    text-align: center;
+    text-transform: uppercase;
+    display: inline-block;
+    cursor: pointer;
+    z-index: 99999;
+    color: #01b7cd;
+    text-decoration: none;
+    box-shadow: none;
+    font-size: 11px;
+    border-radius: 20px;
+}
+
+.card {
+    background-color: #f6fafc;
+    box-shadow: 0 0px 35px 0 rgba(22, 12, 96, 0.09) !important;
+    border-radius: 10px;
+ 
+    .card-body {
+        .badge {
+            text-decoration: none;
+            border-radius: 20px;
+            padding: 5px 15px;
+            line-height: 20px;
+            letter-spacing: 0.2em;
+            text-align: center;
+            text-transform: uppercase;
+ 
+ 
+        }
+        // .image-mb4{
+        //     height: 400px;
+        //     width: 600px;
+        //     z-index: 1;
+        // }
+        .mb-4{
+            
+            display: flex;
+            flex-direction: row;
+            justify-content: overflow;
+            align-items:end ;
+            z-index: 1;
+            cursor: pointer;
+
+        }
+        .ringouter{
+            position: absolute;
+            height: 50px;
+            padding: 0 15px;
+            background-color: white;
+            color: #6d727c;
+            margin-left:20px ;
+            margin-bottom: 20px;
+            border-radius: 25px;
+            z-index: 3;
+            outline: none;
+        }
+        .ringouter:hover{
+        background-color: #01b7cc;
+        color: white;
+        }
+        .ring{
+            i{
+                margin-right: 10px;
+            }
+        }
+       
+        h2 {
+            font-family: Rubik;
+            font-weight: 700;
+        }
+ 
+        .btn-link {
+ 
+            color: #01b7cc;
+            text-decoration: none;
+            cursor: pointer;
+            text-transform: uppercase;
+            font-weight: 500;
+        }
+        .article-author-name{
+            font-size: 11px;
+            line-height: 24px;
+            font-weight: 500;
+            
+        }
+        .podcast-author-name{
+            font-size: 16px;
+            line-height: 24px;
+            font-weight: 500;
+            
+        }
+       
+        .article-date {
+            font-size: 11px;
+            line-height: 24px;
+            text-transform: uppercase;
+            font-weight: 500;
+            color: #6d727c;
+ 
+        }
+ 
+        .card-text {
+            font-family: Rubik;
+            font-size: 14px;
+            font-weight: 400;
+            letter-spacing: 0px;
+            line-height: 28px;
+            text-transform: none;
+            color: #6d727c;
+            text-align: left;
+        }
+        .mt-4:hover{
+            color:darkmagenta;
+
+        }
+ 
+        .card-footer {
+            background: transparent;
+            padding-left: 0;
+            padding-right: 0;
+ 
+            .btn-link {
+                font-size: 11px;
+                font-weight: 500;
+                color: #908dab;
+                position: relative;
+                padding-right: 24px;
+                text-transform: uppercase;
+                text-decoration: none;
+                cursor: pointer;
+                background-color: transparent;
+                padding-left: 0;
+                padding-right: 0;
+ 
+                &:hover {
+                    color: #01b7cc;
+ 
+                }
+            }
+        }
+ 
+    }
+ 
+}
