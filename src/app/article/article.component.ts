@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 
 @Component({
   selector: 'app-article',
@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./article.component.scss']
 })
 export class ArticleComponent {
+  @Input() article: any; 
+
 
 }
