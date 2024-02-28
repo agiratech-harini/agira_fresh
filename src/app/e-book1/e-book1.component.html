@@ -1,0 +1,8 @@
+<h1>E-BOOKS</h1>
+<div class="container">
+    <div class="row">
+        <div *ngFor="let ebook of ebooks" class="col-6 mb-2">
+            <app-e-book [ebook]="ebook"></app-e-book>
+        </div>
+    </div>
+</div>

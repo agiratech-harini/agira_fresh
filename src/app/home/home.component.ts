@@ -1,14 +1,13 @@
-
-import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { Component } from '@angular/core';
- 
- 
+import { Router } from '@angular/router';
+
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss'],
+  selector: 'app-home',
+  templateUrl: './home.component.html',
+  styleUrls: ['./home.component.scss']
 })
-export class AppComponent {
+export class HomeComponent {
+
   cards = [
     {
       imageUrl: 'https://placehold.co/600x400',
@@ -29,19 +28,7 @@ export class AppComponent {
       title: 'Strategies for  your next podcast show',
     }
     
-    
-   
-   
-  ];
-  
-
-  // constructor(private modalService: NgbModal) {
-  // }
- 
-  // public open(modal: any): void {
-  //   this.modalService.open(modal);
-  // }
- 
+  ]
   
   imageUrl: string = "https://placehold.co/150x200";
   title: string = "";
@@ -103,12 +90,22 @@ peoples=[
     p:'It is our job to get you the information you need, so you can make the most of your aviation investments'
   }
 ]
-// article: any; 
 
-//   receiveArticleData(eventData: any) { 
-    
-//     console.log(eventData);
-//   }
+constructor(private router: Router) {}
+navigateToPeople() {
+  this.router.navigate(['/card1'])
+}
+ 
+navigateToArticle() {
+  this.router.navigate(['/article1'])
+}
+ 
+navigateToEBook() {
+  this.router.navigate(['/e-book1'])
+}
+navigateToPodcast() {
+  this.router.navigate(['/podcast1'])
+}
 
 }
   

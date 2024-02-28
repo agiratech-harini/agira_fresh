@@ -1,0 +1,98 @@
+
+<div class="ce-submenu-container">
+    <div class="logo">
+        <img src="https://www.agiratech.com/wp-content/uploads/resumes/620ba2ad4fb2a.png" alt="...">
+      </div>
+    <ul class="sub-menu">
+      <li><a (click)="navigateToPeople()" aria-haspopup="true" aria-expanded="false">People<span class="ce-menu-toggle"><i class="fa"></i></span></a></li>
+      <li id="menu-item-573" class="menu-item "><a (click)="navigateToEBook()" class="ce-sub-menu-item">E-Book</a></li>
+      <li id="menu-item-1944" class="menu-item"><a (click)="navigateToPodcast()" class="ce-sub-menu-item">Podcast</a></li>
+      <li id="menu-item-1943" class="menu-item"><a (click)="navigateToArticle()" class="ce-sub-menu-item">Article</a></li>
+      </ul>
+  </div>
+  
+
+
+  <div id="carouselExample" class="carousel slide">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="https://placehold.co/2000x400" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="https://placehold.co/2000x400"  alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="https://placehold.co/2000x400"  alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+
+
+
+<div class="podcast-head ">
+    <h1>E-BOOKS</h1>
+    <button type="button" class="btn btn-info btn-info-1" (click)="navigateToEBook()">View All</button>
+</div>
+<div class="container">
+    <div class="row">
+        <div *ngFor="let ebook of ebooks" class="col-6 mb-2">
+            <app-e-book [ebook]="ebook"></app-e-book>
+        </div>
+
+
+    </div>
+</div>
+<div class="podcast-head">
+    <h1>PODCAST</h1>
+    <button type="button" class="btn btn-info btn-info-2" (click)="navigateToPodcast()">View All</button>
+</div>
+<div class="container">
+    <div class="row">
+        <div *ngFor="let card of cards" class="col-4 mb-4">
+            <app-podcast [card]="card"></app-podcast>
+        </div>
+
+    </div>
+</div>
+<div class="podcast-head article-head ph-1">
+    <h1>ARTICLE</h1>
+    <button type="button" class="btn btn-info btn-info-3" (click)="navigateToArticle()">View All</button>
+</div>
+<div class="container">
+    <div class="row">
+        <div *ngFor="let article of articles" class="col-4 mb-4">
+            <app-article [article]="article"></app-article>
+        </div>
+
+    </div>
+
+</div>
+<div class="podcast-head  people">
+    <h1>Meet the hosts</h1>
+    <button type="button" class="btn btn-info btn-info-4" (click)="navigateToPeople()">Meet All</button>
+  </div>
+  <div class="container">
+    <div class="row">
+
+      <div *ngFor="let people of peoples" class="col-4 mb-4">
+        <app-people [people]="people"></app-people>
+      </div>
+
+
+</div>
+
+
+
+<!-- <div *ngIf="selectedEbook">
+  <h2>{{ selectedEbook.title }}</h2>
+  <img [src]="selectedEbook.imageUrl" alt="Ebook Image">
+</div> -->
