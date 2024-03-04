@@ -9,6 +9,7 @@ import { Card1Component } from './card1/card1.component';
 import { Article1Component } from './article1/article1.component';
 import { EBook1Component } from './e-book1/e-book1.component';
 import { Podcast1Component } from './podcast1/podcast1.component';
+import { AboutComponent } from './about/about.component';
 
 const routes: Routes = [
   {
@@ -56,13 +57,14 @@ const routes: Routes = [
     component :EBook1Component
   },
   {
-    path :'podcast1',
-    component :Podcast1Component
+    path: 'people/:people',
+    component :AboutComponent
   },
-  {
-    path :'podcast1',
-    component :Podcast1Component
-  }
+  // {
+  //   path :'podcast1',
+  //   component :Podcast1Component
+  // },
+  
 ];
 
 @NgModule({

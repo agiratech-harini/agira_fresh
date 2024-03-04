@@ -15,25 +15,25 @@ export class Card1Component {
     },
     {
       imageUrl:"https://placehold.co/200x200",
-      h2:"Harini",
+      h2:"devipriya",
       h5:"art directory",
       p:'It is our job to get you the information you need, so you can make the most of your aviation investments'
     },
     {
       imageUrl:"https://placehold.co/200x200",
-      h2:"Harini",
+      h2:"Jeeva",
       h5:"art directory",
       p:'It is our job to get you the information you need, so you can make the most of your aviation investments'
     },
     {
       imageUrl:"https://placehold.co/200x200",
-      h2:"Harini",
+      h2:"shivani",
       h5:"art directory",
       p:'It is our job to get you the information you need, so you can make the most of your aviation investments'
     },
     {
       imageUrl:"https://placehold.co/200x200",
-      h2:"Harini",
+      h2:"harshini",
       h5:"art directory",
       p:'It is our job to get you the information you need, so you can make the most of your aviation investments'
     },

@@ -13,6 +13,7 @@ import { HomeComponent } from './home/home.component';
 import { Article1Component } from './article1/article1.component';
 import { EBook1Component } from './e-book1/e-book1.component';
 import { Podcast1Component } from './podcast1/podcast1.component';
+import { AboutComponent } from './about/about.component';
 
 
 @NgModule({
@@ -27,6 +28,7 @@ import { Podcast1Component } from './podcast1/podcast1.component';
     Article1Component,
     EBook1Component,
     Podcast1Component,
+    AboutComponent,
    
   ],
   imports: [

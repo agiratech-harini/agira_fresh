@@ -1,0 +1,84 @@
+// p{
+//     color: #061020;
+//     font-family: "averia serif libre",Sans-serif;
+//     font-size: 20px;
+//     font-weight: 500;
+//     font-style: italic;
+//     line-height: 34px;
+//     display: block;
+//     margin-block-start: 1em;
+//     margin-block-end: 1em;
+// }
+h2{
+    color: #061020;
+    font-family: rubik,Sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 30px;
+}
+h3{
+    color: #10161b;
+    font-family: rubik,Sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    text-transform: uppercase;
+    line-height: 18px;
+    font-weight: bold;
+}
+.imgage1{
+    border-radius: 50%;
+    margin-left:200px;
+    margin-top: 50px;
+    
+}
+.paragraph{
+
+ margin-right: 300px;
+ 
+ color: #6d727c;
+ font-family: rubik,Sans-serif;
+ font-size: 18px;
+ line-height: 30px
+}
+.span{
+    float: left;
+    text-align: center;
+    line-height: 1;
+    font-size: 50px;
+}
+.spansa{
+    display: inline-block;
+}
+.image{
+    align-items: center;
+    display: flex;
+    margin-bottom: 50px;
+    
+}
+.details{
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+    
+}
+.italy{
+    color: #061020;
+    font-family: "averia serif libre",Sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    font-style: italic;
+    line-height: 34px;
+}
+.episode{
+    margin-left: 250px;
+    display: flex;
+    flex-direction: column;
+    color: #061020;
+    font-family: rubik,Sans-serif;
+    font-weight: 700;
+    line-height: 42px;
+    text-transform: none;
+    text-align: left;
+
+        
+}

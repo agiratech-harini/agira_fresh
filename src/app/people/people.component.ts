@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-people',
@@ -7,4 +8,9 @@ import { Component, Input } from '@angular/core';
 })
 export class PeopleComponent {
   @Input() people: any={}; 
+
+  constructor(private router: Router) {}
+  navigateToAbout(name: string) {
+    this.router.navigate([`/people/${name}`])
+  }
 }

@@ -1,0 +1,47 @@
+<div class="image">
+    <img class= "imgage1"    src="https://placehold.co/500x500">
+    <div class="details">
+        <div>
+            <h3>meet the host</h3>
+            <h2>Harini</h2>
+            <p class="italy">Our pick of the best podcasts on Spotify, Apple Podcasts and more covering technology, culture, science,
+                politics and new ideas</p>
+
+        </div>
+        <div class="paragraph">
+            <p>
+                <span class="span">
+                    <span class="spansa">P</span>
+                </span>
+                odcasts are now big business. In this post-Serial audio world, journalists, celebrities, academics and
+                yes,
+                anyone else who owns a mixing desk and a microphone, now has a regular show. The quality is generally
+                very
+                high but some efforts can still be hit and miss with dozens of podcasts popping up around the same
+                themes or
+                TV shows.
+
+            </p>
+
+            <p>
+                <span>
+
+                </span>
+            </p>
+
+        </div>
+    </div>
+</div>
+<div class="container">
+    <h2>Latest Episodes</h2>
+    <div class="browse">
+        <h3>BROWSE ALL</h3>
+    </div>
+    <div>
+        <div class="row">
+            <div *ngFor="let card of cards" class="col-4 mb-4">
+                <app-podcast [card]="card"></app-podcast>
+            </div>
+        </div>
+    </div>
+</div>
